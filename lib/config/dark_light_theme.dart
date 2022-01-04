@@ -13,7 +13,8 @@ class ToggleThemer extends InheritedWidget {
 
   static _ToggleThemeWidgetState of(BuildContext context) {
     //This method returns the current state of the ToggleThemeWidget. This will be used down the tree
-    return (context.inheritFromWidgetOfExactType(ToggleThemer) as ToggleThemer)
+    return (context.dependOnInheritedWidgetOfExactType<ToggleThemer>()
+            as ToggleThemer)
         .data;
   }
 

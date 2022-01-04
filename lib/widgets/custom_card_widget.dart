@@ -100,7 +100,7 @@ class CustomCardWidget extends StatelessWidget {
                               child: Text(
                                 _project.name,
                                 //style: kCaptionStyle,
-                                style: Theme.of(context).textTheme.title,
+                                style: Theme.of(context).textTheme.headline6,
                                 textAlign: TextAlign.center,
                               ),
                             ),

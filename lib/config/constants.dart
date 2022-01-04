@@ -42,14 +42,14 @@ const List<BottomNavigationBarItem> kBottomList =
     const <BottomNavigationBarItem>[
   BottomNavigationBarItem(
     icon: Icon(Entypo.trophy),
-    title: Text('Awards'),
+    label: 'Awards',
   ),
   BottomNavigationBarItem(
     icon: Icon(Icons.account_circle),
-    title: Text('About'),
+    label: 'About',
   ),
   BottomNavigationBarItem(
     icon: Icon(Icons.work),
-    title: Text('Projects'),
+    label: 'Projects',
   )
 ];
