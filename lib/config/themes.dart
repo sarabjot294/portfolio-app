@@ -18,9 +18,7 @@ darkTheme(context) {
         colorScheme: ColorScheme.dark(),
         buttonColor: Colors.blue,
         splashColor: Colors.black),
-    appBarTheme: AppBarTheme(
-      elevation: 0.0,
-    ),
+    appBarTheme: AppBarTheme(elevation: 0.0, color: kPrimaryColor),
     snackBarTheme: Theme.of(context)
         .snackBarTheme
         .copyWith(backgroundColor: Colors.white, actionTextColor: kAccentColor),
@@ -45,6 +43,8 @@ lightTheme(context) {
         splashColor: Colors.white),
     appBarTheme: AppBarTheme(
       elevation: 0.0,
+      color: Colors.white,
+      iconTheme: IconThemeData(color: Colors.black),
     ),
     snackBarTheme:
         Theme.of(context).snackBarTheme.copyWith(backgroundColor: kAccentColor),
