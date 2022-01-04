@@ -2,7 +2,7 @@
 A portfolio application in flutter
 
 ## Installation
-1. Clone it to a folder ```git clone https://github.com/sarabjot294/zonar.git```
+1. Clone it to a folder ```git clone https://github.com/sarabjot294/portfolio-app.git```
 2. Install [Android Studio](https://developer.android.com/studio)
 3. Install [Flutter SDK](https://docs.flutter.dev/get-started/install) 
 4. Make sure to add Flutter to the env path. 
