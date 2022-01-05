@@ -25,7 +25,7 @@ class ProjectView extends StatelessWidget {
               padding: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 32.0),
               crossAxisCount: 3,
               childAspectRatio: MediaQuery.of(context).size.width /
-                  (MediaQuery.of(context).size.height / 1.3),
+                  (MediaQuery.of(context).size.height / 1.2),
               children: List.generate(projects.length,
                   (index) => CustomCardWidget(projects[index], 0)),
             ),
