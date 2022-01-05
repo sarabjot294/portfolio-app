@@ -23,7 +23,7 @@ class CustomCardWidget extends StatelessWidget {
       final snackBar = SnackBar(
           content: Text(msg),
           action: SnackBarAction(
-            label: 'Dissmiss',
+            label: 'Dismiss',
             textColor: ToggleThemer.of(context).isDarkModeOn
                 ? kAccentColor
                 : Colors.greenAccent[100],
@@ -53,10 +53,7 @@ class CustomCardWidget extends StatelessWidget {
         onTap: () {
           analytics.logEvent(
               name: 'card_clicked', parameters: {'card_name': _project.name});
-          if (_project == null)
-            showSnackbar();
-          else
-            openLink(_project.link);
+          showSnackbar();
         },
         child: Padding(
           padding: const EdgeInsets.all(8.0),
@@ -114,7 +111,32 @@ class CustomCardWidget extends StatelessWidget {
                                 textAlign: TextAlign.center,
                                 style: Theme.of(context).textTheme.caption,
                               ),
-                            )
+                            ),
+                            if (_project.link != null)
+                              Column(
+                                children: [
+                                  SizedBox(
+                                    height: height * .01,
+                                  ),
+                                  Center(
+                                      child: Flexible(
+                                          child: InkWell(
+                                              onTap: () {
+                                                openLink(_project.link);
+                                              },
+                                              child: Text("More Details",
+                                                  textScaleFactor: 1.2,
+                                                  style: Theme.of(context)
+                                                      .textTheme
+                                                      .caption
+                                                      .copyWith(
+                                                          decoration:
+                                                              TextDecoration
+                                                                  .underline,
+                                                          color:
+                                                              kAccentColorLight))))),
+                                ],
+                              )
                           ],
                         ),
                       ),

@@ -46,7 +46,8 @@ lightTheme(context) {
       color: Colors.white,
       iconTheme: IconThemeData(color: Colors.black),
     ),
-    snackBarTheme:
-        Theme.of(context).snackBarTheme.copyWith(backgroundColor: kAccentColor),
+    snackBarTheme: Theme.of(context)
+        .snackBarTheme
+        .copyWith(backgroundColor: kAccentColorLight),
   );
 }
