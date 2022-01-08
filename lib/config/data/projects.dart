@@ -1,3 +1,6 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:portfolio/config/constants.dart';
 import 'package:portfolio/model/tiles_model.dart';
 
 final List<TilesData> awards = [
@@ -7,7 +10,42 @@ final List<TilesData> awards = [
       imageLight: 'assests/images/awards/mbillion.png',
       description:
           "TaanaBaana Mobile App won a special mention award in 'Inclusion & Empowerment' category in New delhi in Feburary 2020",
-      link: 'http://mbillionth.in/taana-baana-2/'),
+      link: 'http://mbillionth.in/taana-baana-2/',
+      smallIcons: [
+        //This is a test data.
+        SmallIcons(
+            icon: Icon(
+              Icons.laptop,
+              size: 15.0,
+              color: kAccentColorLight,
+              semanticLabel: "Web Application",
+            ),
+            tooltip: "Web Application"),
+        SmallIcons(
+            icon: Icon(
+              Icons.stay_primary_portrait_outlined,
+              size: 15.0,
+              color: kAccentColorLight,
+              semanticLabel: "Mobile Application",
+            ),
+            tooltip: "Mobile Application"),
+        SmallIcons(
+            icon: Icon(
+              Icons.cloud_circle,
+              size: 15.0,
+              color: kAccentColorLight,
+              semanticLabel: "Cloud Application",
+            ),
+            tooltip: "Cloud Application"),
+        SmallIcons(
+            icon: Icon(
+              Icons.desktop_mac,
+              size: 15.0,
+              color: kAccentColorLight,
+              semanticLabel: "Desktop Application",
+            ),
+            tooltip: "Desktop Application"),
+      ]),
   TilesData(
       name: 'Secretary - General',
       image: 'assests/images/awards/jecrcmun.png',
