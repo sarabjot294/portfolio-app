@@ -44,11 +44,11 @@ final List<TilesData> awards = [
 
 final List<TilesData> projects = [
   TilesData(
-    name: 'Portolio',
-    image: 'assests/images/projects/portfolio.png',
-    imageLight: 'assests/images/projects/portfolio.png',
+    name: 'Open Street Maps — Connectivity',
+    image: 'assests/images/projects/osm.png',
+    imageLight: 'assests/images/projects/osm.png',
     description:
-        'Ta-da! A portfolio app with bottom navigation bar, animations, listView, images, icons, external links, themes, firebase analytics intregation and a clean UI',
+        'Worked closely with Microsoft on improving road connectivity for Open Street Maps, using graph algorithms like Dijkstra, Breadth first search, and Prim\'s minimum spanning tree. Worked with Geo-Spatial datasets.',
   ),
   TilesData(
       name: 'TaanaBaana',
@@ -58,11 +58,39 @@ final List<TilesData> projects = [
           "An android app with multiple user role logins used by supply chain. It has various features like barcode scanning, image capture, GPS, firebase crashanalytics, and etc.",
       link: 'http://mbillionth.in/taana-baana-2/'),
   TilesData(
+    name: 'Portolio',
+    image: 'assests/images/projects/portfolio.png',
+    imageLight: 'assests/images/projects/portfolio.png',
+    description:
+        'A Hobby. Created a portfolio app with bottom navigation bar, animations, listView, images, icons, external links, themes, firebase analytics intregation and a clean UI.',
+  ),
+  TilesData(
+    name: 'Crystalline',
+    image: 'assests/images/projects/crystaline.png',
+    imageLight: 'assests/images/projects/crystaline.png',
+    description:
+        'Created smart lamp with home assistant using Raspberry Pi for Internet of Things coursework at UW. Responsible for creating backend architecture using IBM Watson, Grafana, and Node-red.',
+  ),
+  TilesData(
+    name: 'Online Spam Detection',
+    image: 'assests/images/projects/portfolio.png',
+    imageLight: 'assests/images/projects/portfolio.png',
+    description:
+        'Developed multiple machine learning models to detect false reviews on the hotel website. Performed data analysis, data cleaning, data pre-processing, model training, and fine-tuning.',
+  ),
+  TilesData(
     name: 'JR-Live',
     image: 'assests/images/projects/jrlive.png',
     imageLight: 'assests/images/projects/jrlive.png',
     description:
         'An ecommerce app built for internal sales team for JR. It has various features like sort, filter, search and add to favourites, creating quotation and invoicing in PDF and Excel.',
+  ),
+  TilesData(
+    name: 'Multinode Key-Value Store',
+    image: 'assests/images/projects/portfolio.png',
+    imageLight: 'assests/images/projects/portfolio.png',
+    description:
+        'Created a multi-node cluster of servers using Docker for \‘Advance Distributed Systems\’ coursework. Implemented 2-phase commit for \‘put\’ and \‘delete\’ operations with thread-safe parallel programming.',
   ),
   TilesData(
     name: 'JRF field-work',
