@@ -1,5 +1,5 @@
 import 'dart:math';
-
+import 'package:flutter_icons/flutter_icons.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio/config/constants.dart';
@@ -135,6 +135,21 @@ class CustomCardWidget extends StatelessWidget {
                                                                   .underline,
                                                           color:
                                                               kAccentColorLight))))),
+                                  if (_project.smallIcons != null)
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.end,
+                                      children: [
+                                        for (var smallIcon
+                                            in _project.smallIcons)
+                                          Tooltip(
+                                            child: ToggleThemer.of(context)
+                                                    .isDarkModeOn
+                                                ? smallIcon.icon
+                                                : smallIcon.icon,
+                                            message: smallIcon.tooltip,
+                                          ),
+                                      ],
+                                    )
                                 ],
                               )
                           ],
