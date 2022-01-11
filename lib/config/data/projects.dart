@@ -9,9 +9,23 @@ final List<TilesData> awards = [
     image: 'assests/images/awards/mbillion.png',
     imageLight: 'assests/images/awards/mbillion.png',
     description:
-        "TaanaBaana Mobile App won a special mention award in 'Inclusion & Empowerment' category in New delhi in Feburary 2020",
+        "TaanaBaana Mobile App won a special mention award in 'Inclusion & Empowerment' category in New Delhi in Feburary 2020",
     link: 'http://mbillionth.in/taana-baana-2/',
   ),
+  TilesData(
+      name: 'Student Technical Assistant',
+      image: 'assests/images/awards/uw.png',
+      imageLight: 'assests/images/awards/uw.png',
+      description:
+          'Worked with Milgard Center of Business Analytics to help and resolve issues with MSBA students with Azure services and MS-SQL Integration.',
+      link: 'https://www.tacoma.uw.edu/business/cba/our-people'),
+  TilesData(
+      name: 'STFC Member',
+      image: 'assests/images/awards/stfc.png',
+      imageLight: 'assests/images/awards/stfc.png',
+      description:
+          'Member of Student Technical Fee Committee at UW. Responsible for making decision related to technology which impacted 4000+ students.',
+      link: 'https://www.tacoma.uw.edu/student-fees/stfc2122'),
   TilesData(
       name: 'Secretary - General',
       image: 'assests/images/awards/jecrcmun.png',
@@ -20,17 +34,17 @@ final List<TilesData> awards = [
           'Served as a Secretary General of JECRC MUN 2018. Managed a team of 50+ people.',
       link: 'https://www.facebook.com/jecrcmun/'),
   TilesData(
-      name: 'Gold Medal',
-      image: 'assests/images/awards/iitj.png',
-      imageLight: 'assests/images/awards/iitj_light.png',
-      description:
-          'Won Gold Medal at IIT Jodhpur Chess Tournament in 2016 and Won Runner\'s up Medal in 2015.'),
-  TilesData(
       name: 'Winner at RTU Chess Tournament 3x',
       image: 'assests/images/awards/rtu.png',
       imageLight: 'assests/images/awards/rtu_light.png',
       description:
           'Won 3 Annual RTU chess tournament in a row. (2014-2015-2016). Runner\'s up in 2017'),
+  TilesData(
+      name: 'Gold Medal',
+      image: 'assests/images/awards/iitj.png',
+      imageLight: 'assests/images/awards/iitj_light.png',
+      description:
+          'Won gold medal at IIT Jodhpur chess tournament in 2016 and won silver medal in 2015'),
   TilesData(
       name: 'Won High Commendation at GTC MUN 2018',
       image: 'assests/images/awards/gtcmun.png',
