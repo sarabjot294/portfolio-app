@@ -3,8 +3,8 @@ import 'package:portfolio/widgets/social_media.dart';
 
 final List<SocialMedia> socialHandles = [
   SocialMedia(
-    socialMediaName: 'Gmail',
-    image: 'assests/icons/gmail.png',
+    socialMediaName: 'Email',
+    image: 'assests/icons/outlook.png',
     onTap: sendMail,
   ),
   SocialMedia(
