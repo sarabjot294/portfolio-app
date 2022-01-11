@@ -135,21 +135,20 @@ class CustomCardWidget extends StatelessWidget {
                                                                   .underline,
                                                           color:
                                                               kAccentColorLight))))),
-                                  if (_project.smallIcons != null)
-                                    Row(
-                                      mainAxisAlignment: MainAxisAlignment.end,
-                                      children: [
-                                        for (var smallIcon
-                                            in _project.smallIcons)
-                                          Tooltip(
-                                            child: ToggleThemer.of(context)
-                                                    .isDarkModeOn
-                                                ? smallIcon.icon
-                                                : smallIcon.icon,
-                                            message: smallIcon.tooltip,
-                                          ),
-                                      ],
-                                    )
+                                ],
+                              ),
+                            if (_project.smallIcons != null)
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                children: [
+                                  for (var smallIcon in _project.smallIcons)
+                                    Tooltip(
+                                      child:
+                                          ToggleThemer.of(context).isDarkModeOn
+                                              ? smallIcon.icon
+                                              : smallIcon.icon,
+                                      message: smallIcon.tooltip,
+                                    ),
                                 ],
                               )
                           ],
