@@ -2,7 +2,8 @@ import 'package:url_launcher/url_launcher.dart';
 
 sendMail() async {
   // Android and iOS
-  const uri = 'mailto:sarabjot294@gmail.com?subject=Hola!&body=Hi%20Sarabjot';
+  const uri =
+      'mailto:singh.sarabjot@outlook.com.com?subject=Hola!&body=Hi%20Sarabjot';
   if (await canLaunch(uri)) {
     await launch(uri);
   } else {

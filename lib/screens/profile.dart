@@ -34,18 +34,43 @@ class ProfileView extends StatelessWidget {
                     fontFamily: 'Nanum Gothic'),*/
               ),
               SizedBox(
-                height: 20.0,
+                height: 5.0,
+              ),
+              Text(
+                'Software Engineer II at Amazon',
+                textScaleFactor: 1.4,
+                style: Theme.of(context).textTheme.overline,
+              ),
+              SizedBox(
+                height: 1.0,
+              ),
+              Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+                Icon(
+                  Icons.school_rounded,
+                  size: 25,
+                ),
+                SizedBox(
+                  width: 10.0,
+                ),
+                Text(
+                  'University of Washington',
+                  textScaleFactor: 1.4,
+                  style: Theme.of(context).textTheme.overline,
+                ),
+              ]),
+              SizedBox(
+                height: 5.0,
               ),
               Center(
                 child: Text(
-                  'Android, Flutter, Chess, Movies\n Loves Football.',
+                  'Ambitious, Analytical, Adventurous, Ambivert\n Loves Football.',
                   style: Theme.of(context).textTheme.caption,
                   textScaleFactor: 1.9,
                   textAlign: TextAlign.center,
                 ),
               ),
               SizedBox(
-                height: 50.0,
+                height: 30.0,
                 width: 60.0,
                 child: Divider(
                   color: kAccentColor3,
