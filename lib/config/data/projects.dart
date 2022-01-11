@@ -148,8 +148,8 @@ final List<TilesData> projects = [
       ]),
   TilesData(
       name: 'Online Spam Detection',
-      image: 'assests/images/projects/portfolio.png',
-      imageLight: 'assests/images/projects/portfolio.png',
+      image: 'assests/images/projects/spam_detection.png',
+      imageLight: 'assests/images/projects/spam_detection.png',
       description:
           'Developed multiple machine learning models to detect false reviews on the hotel website. Performed data analysis, data cleaning, data pre-processing, model training, and fine-tuning.',
       smallIcons: [
@@ -188,8 +188,8 @@ final List<TilesData> projects = [
       ]),
   TilesData(
       name: 'Multinode Key-Value Store',
-      image: 'assests/images/projects/portfolio.png',
-      imageLight: 'assests/images/projects/portfolio.png',
+      image: 'assests/images/projects/symphony.png',
+      imageLight: 'assests/images/projects/symphony.png',
       description:
           'Created a multi-node cluster of servers using Docker for \‘Advance Distributed Systems\’ coursework. Implemented 2-phase commit for \‘put\’ and \‘delete\’ operations with thread-safe parallel programming.',
       smallIcons: [
@@ -292,12 +292,12 @@ final List<TilesData> projects = [
       smallIcons: [
         SmallIcons(
             icon: Icon(
-              Icons.desktop_mac,
+              Icons.stay_primary_portrait_outlined,
               size: 15.0,
               color: kAccentColorLight,
-              semanticLabel: "Desktop Application",
+              semanticLabel: "Mobile Application",
             ),
-            tooltip: "Desktop Application"),
+            tooltip: "Mobile Application"),
       ]),
   TilesData(
       name: 'Binge Watch',
