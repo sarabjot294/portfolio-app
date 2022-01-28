@@ -53,3 +53,6 @@ const List<BottomNavigationBarItem> kBottomList =
     label: 'Projects',
   )
 ];
+
+const String kResumeURL =
+    "https://github.com/sarabjot294/important_files/blob/cf35ad8a5ca1680ec724c791bdcf625e2bd0468e/SARABJOT_SINGH_RESUME.pdf";

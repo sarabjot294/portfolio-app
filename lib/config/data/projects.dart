@@ -52,7 +52,8 @@ final List<TilesData> projects = [
     image: 'assests/images/projects/osm.png',
     imageLight: 'assests/images/projects/osm.png',
     description:
-        'Worked closely with Microsoft on improving road connectivity for Open Street Maps, using graph algorithms like Dijkstra, Breadth first search, and Prim\'s minimum spanning tree.',
+        'Worked closely with Microsoft on improving road connectivity for Open Street Maps using graph algorithms',
+    link: 'https://github.com/sarabjot294/important_files/blob/cf35ad8a5ca1680ec724c791bdcf625e2bd0468e/OSM%20Project%20Poster.pdf',
     smallIcons: [
       //This is a test data.
       SmallIcons(
