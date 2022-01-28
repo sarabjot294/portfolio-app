@@ -3,8 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/config/constants.dart';
 import 'package:portfolio/config/data/social_media_details.dart';
 import 'package:portfolio/widgets/social_media.dart';
+import 'package:portfolio/config/dark_light_theme.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ProfileView extends StatelessWidget {
+  openResume() async {
+    await launch(kResumeURL);
+  }
+
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -117,6 +124,21 @@ class ProfileView extends StatelessWidget {
                     socialMediaName: socialHandles[5].socialMediaName,
                     onTap: socialHandles[5].onTap,
                   ),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Text("Resume", style: Theme.of(context).textTheme.subtitle1.copyWith(fontStyle: FontStyle.italic)),
+                  IconButton(
+                    icon: ToggleThemer.of(context).isDarkModeOn
+                        ? Icon(Icons.download)
+                        : Icon(Icons.download),
+                    onPressed: () {
+                      openResume();
+                    },
+                  )
                 ],
               )
             ],

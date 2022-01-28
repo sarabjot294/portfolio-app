@@ -27,7 +27,7 @@ class SocialMedia extends StatelessWidget {
           ),
           Text(
             socialMediaName,
-            style: Theme.of(context).textTheme.subtitle1.copyWith(
+            style: Theme.of(context).textTheme.caption.copyWith(
                 color: ToggleThemer.of(context).isDarkModeOn
                     ? Colors.white
                     : Colors.black),

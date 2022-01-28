@@ -32,6 +32,7 @@ dependencies:
   flutter_icons: ^1.1.0
   firebase: ^7.3.0
   firebase_analytics: ^5.0.16
+  google_fonts: ^1.1.2
 
 dev_dependencies:
   flutter_test:
