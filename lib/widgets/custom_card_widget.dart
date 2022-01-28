@@ -118,8 +118,10 @@ class CustomCardWidget extends StatelessWidget {
                                   SizedBox(
                                     height: height * .01,
                                   ),
-                                  Center(
-                                      child: Flexible(
+                                  Flex(
+                                    direction: Axis.horizontal,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                      children:[ Flexible(
                                           child: InkWell(
                                               onTap: () {
                                                 openLink(_project.link);
@@ -134,7 +136,7 @@ class CustomCardWidget extends StatelessWidget {
                                                               TextDecoration
                                                                   .underline,
                                                           color:
-                                                              kAccentColorLight))))),
+                                                              kAccentColorLight))))]),
                                 ],
                               ),
                             if (_project.smallIcons != null)
