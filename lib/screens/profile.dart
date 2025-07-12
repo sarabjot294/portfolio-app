@@ -44,8 +44,16 @@ class ProfileView extends StatelessWidget {
                 height: 5.0,
               ),
               Text(
-                'Software Engineer II at Amazon',
+                'Senior Software Engineer at FIS',
                 textScaleFactor: 1.4,
+                style: Theme.of(context).textTheme.overline,
+              ),
+              SizedBox(
+                height: 5.0,
+              ),
+              Text(
+                'Ex-Amazon',
+                textScaleFactor: 1.2,
                 style: Theme.of(context).textTheme.overline,
               ),
               SizedBox(
@@ -70,7 +78,7 @@ class ProfileView extends StatelessWidget {
               ),
               Center(
                 child: Text(
-                  'Ambitious, Analytical, Adventurous, Ambivert\n Loves Football.',
+                  'Ambitious, Adventurous, Ambivert\n Loves Outdoor.',
                   style: Theme.of(context).textTheme.caption,
                   textScaleFactor: 1.9,
                   textAlign: TextAlign.center,
@@ -130,7 +138,11 @@ class ProfileView extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Text("Resume", style: Theme.of(context).textTheme.subtitle1.copyWith(fontStyle: FontStyle.italic)),
+                  Text("Resume",
+                      style: Theme.of(context)
+                          .textTheme
+                          .subtitle1
+                          .copyWith(fontStyle: FontStyle.italic)),
                   IconButton(
                     icon: ToggleThemer.of(context).isDarkModeOn
                         ? Icon(Icons.download)
