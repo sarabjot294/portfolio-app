@@ -6,6 +6,7 @@ class TilesData {
   String name;
   String description;
   String link;
+  String year;
   List<SmallIcons> smallIcons;
   TilesData(
       {@required this.image,
@@ -13,7 +14,8 @@ class TilesData {
       @required this.name,
       @required this.description,
       this.link,
-      this.smallIcons});
+      this.smallIcons,
+      this.year = ''});
 }
 
 class SmallIcons {

@@ -101,6 +101,19 @@ class CustomCardWidget extends StatelessWidget {
                                 textAlign: TextAlign.center,
                               ),
                             ),
+                            SizedBox(height: height * .005),
+                            // Add year here
+                            Center(
+                              child: Text(
+                                _project
+                                    .year, // Make sure TilesData has a year field
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .caption
+                                    ?.copyWith(fontWeight: FontWeight.bold),
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
                             SizedBox(
                               height: height * .01,
                             ),
@@ -119,24 +132,27 @@ class CustomCardWidget extends StatelessWidget {
                                     height: height * .01,
                                   ),
                                   Flex(
-                                    direction: Axis.horizontal,
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                      children:[ Flexible(
-                                          child: InkWell(
-                                              onTap: () {
-                                                openLink(_project.link);
-                                              },
-                                              child: Text("More Details",
-                                                  textScaleFactor: 1.2,
-                                                  style: Theme.of(context)
-                                                      .textTheme
-                                                      .caption
-                                                      .copyWith(
-                                                          decoration:
-                                                              TextDecoration
-                                                                  .underline,
-                                                          color:
-                                                              kAccentColorLight))))]),
+                                      direction: Axis.horizontal,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Flexible(
+                                            child: InkWell(
+                                                onTap: () {
+                                                  openLink(_project.link);
+                                                },
+                                                child: Text("More Details",
+                                                    textScaleFactor: 1.2,
+                                                    style: Theme.of(context)
+                                                        .textTheme
+                                                        .caption
+                                                        .copyWith(
+                                                            decoration:
+                                                                TextDecoration
+                                                                    .underline,
+                                                            color:
+                                                                kAccentColorLight))))
+                                      ]),
                                 ],
                               ),
                             if (_project.smallIcons != null)
