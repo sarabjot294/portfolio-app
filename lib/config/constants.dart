@@ -55,4 +55,4 @@ const List<BottomNavigationBarItem> kBottomList =
 ];
 
 const String kResumeURL =
-    "https://github.com/sarabjot294/important_files/blob/cf35ad8a5ca1680ec724c791bdcf625e2bd0468e/SARABJOT_SINGH_RESUME.pdf";
+    "https://github.com/sarabjot294/important_files/blob/f7b9cbac288ec14973a24c85b0252307744d2690/SARABJOT_SINGH_RESUME.pdf";
