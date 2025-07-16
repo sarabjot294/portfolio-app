@@ -5,6 +5,14 @@ import 'package:portfolio/model/tiles_model.dart';
 
 final List<TilesData> awards = [
   TilesData(
+      name: 'Hawaii Ironman 70.3 Finisher',
+      image: 'assests/images/awards/ironman.png',
+      imageLight: 'assests/images/awards/ironman.png',
+      description:
+          '1.2 mile swim, 56 mile bike, and 13.1 mile run in the beautiful island of Hawaii.',
+      link: 'https://www.ironman.com/races/im703-hawaii',
+      year: '2025'),
+  TilesData(
       name: 'Student Technical Assistant',
       image: 'assests/images/awards/uw.png',
       imageLight: 'assests/images/awards/uw.png',
@@ -71,6 +79,24 @@ final List<TilesData> awards = [
 ];
 
 final List<TilesData> projects = [
+  TilesData(
+    name: 'Encryption Service',
+    image: 'assests/images/projects/encryption.png',
+    imageLight: 'assests/images/projects/encryption.png',
+    description:
+        'Spearheaded cross-team effort to replace 3rd-party tokenization with a new encryption service across 5+ backend services; partnered with security team, and achieved 70% lower latency in critical paths.',
+    smallIcons: [
+      SmallIcons(
+          icon: Icon(
+            Icons.cloud_circle,
+            size: 15.0,
+            color: kAccentColorLight,
+            semanticLabel: "Cloud Application",
+          ),
+          tooltip: "Cloud Application"),
+    ],
+    year: '2025',
+  ),
   TilesData(
       name: 'Portolio',
       image: 'assests/images/projects/portfolio.png',

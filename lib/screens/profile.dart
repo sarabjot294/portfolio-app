@@ -49,15 +49,7 @@ class ProfileView extends StatelessWidget {
                 style: Theme.of(context).textTheme.overline,
               ),
               SizedBox(
-                height: 5.0,
-              ),
-              Text(
-                'Ex-Amazon',
-                textScaleFactor: 1.2,
-                style: Theme.of(context).textTheme.overline,
-              ),
-              SizedBox(
-                height: 1.0,
+                height: 2.0,
               ),
               Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                 Icon(
@@ -74,7 +66,7 @@ class ProfileView extends StatelessWidget {
                 ),
               ]),
               SizedBox(
-                height: 5.0,
+                height: 2.0,
               ),
               Center(
                 child: Text(
