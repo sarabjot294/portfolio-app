@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class TilesData {
   String image;
   String imageLight;
+  double imageSize;
   String name;
   String description;
   String link;
@@ -11,6 +12,7 @@ class TilesData {
   TilesData(
       {@required this.image,
       this.imageLight,
+      this.imageSize,
       @required this.name,
       @required this.description,
       this.link,

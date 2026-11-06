@@ -1,9 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio/config/constants.dart';
-import 'package:portfolio/config/data/social_media_details.dart';
-import 'package:portfolio/widgets/social_media.dart';
-import 'package:portfolio/config/dark_light_theme.dart';
+import 'package:portfolio/logics/social_media-logics.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -44,8 +42,16 @@ class ProfileView extends StatelessWidget {
                 height: 5.0,
               ),
               Text(
-                'Senior Software Engineer at FIS',
+                'Senior Software Engineer at Nordstrom',
                 textScaleFactor: 1.4,
+                style: Theme.of(context).textTheme.overline,
+              ),
+              SizedBox(
+                height: 2.0,
+              ),
+              Text(
+                'ex-amazon',
+                textScaleFactor: 1.15,
                 style: Theme.of(context).textTheme.overline,
               ),
               SizedBox(
@@ -84,69 +90,62 @@ class ProfileView extends StatelessWidget {
                   thickness: 1.2,
                 ),
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
+              SizedBox(
+                height: 12.0,
+              ),
+              Wrap(
+                alignment: WrapAlignment.center,
+                spacing: 16.0,
+                runSpacing: 12.0,
                 children: [
-                  SocialMedia(
-                    image: socialHandles[0].image,
-                    socialMediaName: socialHandles[0].socialMediaName,
-                    onTap: socialHandles[0].onTap,
+                  _ProfileAction(
+                    icon: Image.asset(
+                      'assests/icons/linkedin.png',
+                      width: 20.0,
+                      height: 20.0,
+                    ),
+                    label: 'LinkedIn',
+                    onPressed: openLinkedIn,
                   ),
-                  SocialMedia(
-                    image: socialHandles[1].image,
-                    socialMediaName: socialHandles[1].socialMediaName,
-                    onTap: socialHandles[1].onTap,
-                  ),
-                  SocialMedia(
-                    image: socialHandles[2].image,
-                    socialMediaName: socialHandles[2].socialMediaName,
-                    onTap: socialHandles[2].onTap,
+                  _ProfileAction(
+                    icon: Icon(Icons.download, size: 20.0),
+                    label: 'Resume',
+                    onPressed: openResume,
                   ),
                 ],
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  SocialMedia(
-                    image: socialHandles[3].image,
-                    socialMediaName: socialHandles[3].socialMediaName,
-                    onTap: socialHandles[3].onTap,
-                  ),
-                  SocialMedia(
-                    image: socialHandles[4].image,
-                    socialMediaName: socialHandles[4].socialMediaName,
-                    onTap: socialHandles[4].onTap,
-                  ),
-                  SocialMedia(
-                    image: socialHandles[5].image,
-                    socialMediaName: socialHandles[5].socialMediaName,
-                    onTap: socialHandles[5].onTap,
-                  ),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Text("Resume",
-                      style: Theme.of(context)
-                          .textTheme
-                          .subtitle1
-                          .copyWith(fontStyle: FontStyle.italic)),
-                  IconButton(
-                    icon: ToggleThemer.of(context).isDarkModeOn
-                        ? Icon(Icons.download)
-                        : Icon(Icons.download),
-                    onPressed: () {
-                      openResume();
-                    },
-                  )
-                ],
-              )
             ],
           ),
+        ),
+      ),
+    );
+  }
+}
+
+class _ProfileAction extends StatelessWidget {
+  final Widget icon;
+  final String label;
+  final VoidCallback onPressed;
+
+  const _ProfileAction({
+    @required this.icon,
+    @required this.label,
+    @required this.onPressed,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 150.0,
+      height: 44.0,
+      child: OutlinedButton.icon(
+        onPressed: onPressed,
+        icon: icon,
+        label: Text(label),
+        style: OutlinedButton.styleFrom(
+          primary: Theme.of(context).textTheme.bodyText1.color,
+          side: BorderSide(color: kAccentColorLight),
+          shape: StadiumBorder(),
         ),
       ),
     );
