@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ToggleThemeWidget(
-      initialDarkModeOn: false,
+      initialDarkModeOn: true,
       child: SarabjotProfile(),
     );
   }

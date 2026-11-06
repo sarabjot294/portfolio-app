@@ -5,6 +5,42 @@ import 'package:portfolio/model/tiles_model.dart';
 
 final List<TilesData> awards = [
   TilesData(
+      name: 'Victoria Half Marathon',
+      image: 'assests/images/awards/race_victoria.png',
+      imageLight: 'assests/images/awards/race_victoria.png',
+      imageSize: 140.0,
+      description: 'Sub-2 half marathon, finished in 1:53:02.',
+      year: '2026'),
+  TilesData(
+      name: '100K Steps in 1 Day',
+      image: 'assests/images/awards/race_100k_steps.png',
+      imageLight: 'assests/images/awards/race_100k_steps.png',
+      imageSize: 140.0,
+      description:
+          'Completed the 100K steps in one day challenge with 5 friends in Seattle.',
+      year: '2026'),
+  TilesData(
+      name: '50K Ultra Marathon',
+      image: 'assests/images/awards/race_50k.png',
+      imageLight: 'assests/images/awards/race_50k.png',
+      imageSize: 140.0,
+      description: 'Completed a 50K ultra marathon.',
+      year: '2026'),
+  TilesData(
+      name: 'Eugene Marathon',
+      image: 'assests/images/awards/race_eugene.png',
+      imageLight: 'assests/images/awards/race_eugene.png',
+      imageSize: 140.0,
+      description: 'Sub-5 PR race, finished in 4:53.',
+      year: '2026'),
+  TilesData(
+      name: 'Long Beach Marathon',
+      image: 'assests/images/awards/race_long_beach.png',
+      imageLight: 'assests/images/awards/race_long_beach.png',
+      imageSize: 140.0,
+      description: 'Ran the marathon with a friend.',
+      year: '2025'),
+  TilesData(
       name: 'Hawaii Ironman 70.3 Finisher',
       image: 'assests/images/awards/ironman.png',
       imageLight: 'assests/images/awards/ironman.png',
@@ -12,6 +48,20 @@ final List<TilesData> awards = [
           '1.2 mile swim, 56 mile bike, and 13.1 mile run in the beautiful island of Hawaii.',
       link: 'https://www.ironman.com/races/im703-hawaii',
       year: '2025'),
+  TilesData(
+      name: 'Leavenworth Marathon',
+      image: 'assests/images/awards/race_leavenworth.png',
+      imageLight: 'assests/images/awards/race_leavenworth.png',
+      imageSize: 140.0,
+      description: 'Finished the marathon in 5:20.',
+      year: '2024'),
+  TilesData(
+      name: 'Cherry Blossom Half Marathon',
+      image: 'assests/images/awards/race_cherry_blossom.png',
+      imageLight: 'assests/images/awards/race_cherry_blossom.png',
+      imageSize: 140.0,
+      description: 'Finished the half marathon in 2:30.',
+      year: '2024'),
   TilesData(
       name: 'Student Technical Assistant',
       image: 'assests/images/awards/uw.png',

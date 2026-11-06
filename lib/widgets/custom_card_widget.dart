@@ -46,6 +46,14 @@ class CustomCardWidget extends StatelessWidget {
 
     final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
+    final Widget cardImage = Image.asset(
+      ToggleThemer.of(context).isDarkModeOn
+          ? _project.imageLight
+          : _project.image,
+      //width: width * .25,
+      //              height: height * .15,
+      alignment: AlignmentDirectional.center,
+    );
     return Card(
       elevation: 5,
       margin: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, _bottomPadding),
@@ -67,14 +75,18 @@ class CustomCardWidget extends StatelessWidget {
                   child: Padding(
                     padding: EdgeInsets.all(8.0),
                     child: Center(
-                      child: Image.asset(
-                        ToggleThemer.of(context).isDarkModeOn
-                            ? _project.imageLight
-                            : _project.image,
-                        //width: width * .25,
-                        //              height: height * .15,
-                        alignment: AlignmentDirectional.center,
-                      ),
+                      child: _project.imageSize == null
+                          ? cardImage
+                          : ConstrainedBox(
+                              constraints: BoxConstraints(
+                                maxWidth: _project.imageSize,
+                                maxHeight: _project.imageSize,
+                              ),
+                              child: AspectRatio(
+                                aspectRatio: 1.0,
+                                child: cardImage,
+                              ),
+                            ),
                     ),
                   ),
                 ),
@@ -118,11 +130,14 @@ class CustomCardWidget extends StatelessWidget {
                               height: height * .01,
                             ),
                             Flexible(
-                              child: Text(
-                                _project.description,
-                                textScaleFactor: 1.2,
-                                textAlign: TextAlign.center,
-                                style: Theme.of(context).textTheme.caption,
+                              child: SizedBox(
+                                width: double.infinity,
+                                child: Text(
+                                  _project.description,
+                                  textScaleFactor: 1.2,
+                                  textAlign: TextAlign.center,
+                                  style: Theme.of(context).textTheme.caption,
+                                ),
                               ),
                             ),
                             if (_project.link != null)
